@@ -91,3 +91,8 @@ perimeter = 2 * math.pi * radius
 area = math.pi * radius ** 2
 print(f'{perimeter = :.2f}')  # 输出：perimeter = 34.56
 print(f'{area = :.2f}')       # 输出：area = 95.03
+
+# 输入年份，闰年输出True，平年输出False
+year = int(input('请输入年份: '))
+is_leap = year % 4 == 0 and year % 100 != 0 or year % 400 == 0
+print(f'{is_leap = }')
