@@ -107,3 +107,27 @@ for i in range(x, 0, -1):
     if x % i == 0 and y % i == 0:
         print(f'最大公约数: {i}')
         break
+
+# 输入两个正整数求它们的最大公约数
+x = int(input('x = '))
+y = int(input('y = '))
+while y % x != 0:
+    x, y = y % x, x
+print(f'最大公约数: {x}')
+
+# 例子3：猜数字游戏
+# 猜数字小游戏
+import random
+answer = random.randrange(1, 101)
+counter = 0
+while True:
+    counter += 1
+    num = int(input('请输入: '))
+    if num < answer:
+        print('大一点.')
+    elif num > answer:
+        print('小一点.')
+    else:
+        print('猜对了.')
+        break
+print(f'你一共猜了{counter}次.')
