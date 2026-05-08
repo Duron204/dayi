@@ -1,7 +1,7 @@
 import time
 
 print('hello, world')
-time.sleep(1)
+time.sleep(1) #停顿一秒然后结束
 
 # for-in循环
 # 每隔1秒输出一次“hello, world”，持续1小时
