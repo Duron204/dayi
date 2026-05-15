@@ -19,7 +19,7 @@
 
 ### Python 学习
 
-- `python学习` - Python 学习笔记和练习
+- `python学习` - Python 学习笔记和练习 在https://github.com/jackfrued/Python-100-Days中学习的
 - `opencv` - OpenCV 图像处理学习
 
 ## 使用方法
