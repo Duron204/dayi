@@ -95,3 +95,21 @@ print(set1)  # {1, 1000, 10000}
 set1.clear()
 print(set1)  # set()
 
+# 集合类型还有一个名为isdisjoint的方法可以判断两个集合有没有相同的元素
+set1 = {'Java', 'Python', 'C++', 'Kotlin'}
+set2 = {'Kotlin', 'Swift', 'Java', 'Dart'}
+set3 = {'HTML', 'CSS', 'JavaScript'}
+print(set1.isdisjoint(set2))  # False
+print(set1.isdisjoint(set3))  # True
+
+# 不可变集合
+# Python 中还有一种不可变类型的集合，名字叫frozenset。set跟frozenset的区别就如同list跟tuple的区别，frozenset由于是不可变类型，能够计算出哈希码，因此它可以作为set中的元素。
+fset1 = frozenset({1, 3, 5, 7})
+fset2 = frozenset(range(1, 6))
+print(fset1)          # frozenset({1, 3, 5, 7})
+print(fset2)          # frozenset({1, 2, 3, 4, 5})
+print(fset1 & fset2)  # frozenset({1, 3, 5})
+print(fset1 | fset2)  # frozenset({1, 2, 3, 4, 5, 7})
+print(fset1 - fset2)  # frozenset({7})
+print(fset1 < fset2)  # False
+
